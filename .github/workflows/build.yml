@@ -1,0 +1,32 @@
+name: "Sphinx: Build HTML"
+
+on: 
+  push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        persist-credentials: false
+
+    - name: Install dependencies
+      run: |
+          sudo apt update
+          sudo apt install python3-pip -y
+          pip3 install -r dependencies/deps.txt
+
+    - name: Build HTML
+      run: |
+        tox -e html
+        echo "Build completed."
+
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      if: github.ref == 'refs/heads/main'
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: build/html
