@@ -16,7 +16,7 @@ jobs:
     - name: Install dependencies
       run: |
           sudo apt update
-          sudo apt install python3-pip -y
+          sudo apt install texlive-latex-extra texlive-xetex texlive-lang-chinese latexmk python3-pip -y
           pip3 install -r dependencies/deps.txt
 
     - name: Build HTML
@@ -24,6 +24,9 @@ jobs:
         tox -e html
         echo "Build completed."
 
+    - name: Build PDF
+      run: tox -e pdf
+        
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       if: github.ref == 'refs/heads/main'

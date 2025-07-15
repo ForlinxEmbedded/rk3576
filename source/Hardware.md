@@ -1,4 +1,4 @@
-# FETMX6UL-C简介f是
+# FETMX6UL-C简介
 ## 2.1  FETMX6UL-C核心板外观图
 	Nand Flash方案：
 
