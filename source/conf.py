@@ -17,27 +17,34 @@ release = '1.0'
 extensions = ['myst_parser']
 templates_path = ['_templates']
 exclude_patterns = []
-latex_engine = 'xelatex'
-latex_elements = {
-    'passoptionstopackages': r'''
-\PassOptionsToPackage{svgnames}{xcolor}
-''',
-    'fontpkg': r'''
-\setmainfont{DejaVu Serif}
-\setsansfont{DejaVu Sans}
-\setmonofont{DejaVu Sans Mono}
-''',
-    'preamble': r'''
-\usepackage[titles]{tocloft}
-\cftsetpnumwidth {1.25cm}\cftsetrmarg{1.5cm}
-\setlength{\cftchapnumwidth}{0.75cm}
-\setlength{\cftsecindent}{\cftchapnumwidth}
-\setlength{\cftsecnumwidth}{1.25cm}
-''',
-    'sphinxsetup': 'TitleColor=DarkGoldenrod',
-    'fncychap': r'\usepackage[Bjornstrup]{fncychap}',
-    'printindex': r'\footnotesize\raggedright\printindex',
+source_suffix = {
+    '.rst': 'restructuredtext',    
+    '.md': 'markdown',
 }
+latex_engine = 'xelatex'
+latex_documents = [
+('hardware',
+'abc.tex',
+'FET3576-C Hardware Manual',
+'Forlinx Embedded Technology Co., Ltd',
+'manual',
+False)
+]
+
+latex_elements = {
+    'preamble': r'''
+    \usepackage{fontspec}
+    \usepackage{xeCJK}
+    \setCJKmainfont{Noto Serif CJK SC}  % 设置中文字体为宋体（可以替换为你喜欢的中文字体）
+    \setcounter{secnumdepth}{0} % 禁用章节自动编号
+	
+   
+    \setmainfont{Times New Roman}  % 设置英文字体为 Times New Roman（可以根据需求调整）
+    '''
+}
+# Enable numbered headings
+numfig = False
+
 latex_show_urls = 'footnote'
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
