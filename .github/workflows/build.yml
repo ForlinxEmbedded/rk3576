@@ -1,4 +1,4 @@
-name: "Sphinx: Build HTML"
+name: "Sphinx: Build"
 
 on: 
   push
