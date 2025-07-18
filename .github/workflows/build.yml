@@ -16,7 +16,7 @@ jobs:
     - name: Install dependencies
       run: |
           sudo apt update
-          sudo apt install tox texlive-latex-extra texlive-xetex latexmk python3-pip -y
+          sudo apt install tox texlive-latex-extra texlive-xetex latexmk fonts-freefont-ttf python3-pip -y
           pip3 install -r dependencies/deps.txt
 
     - name: Build HTML
