@@ -23,12 +23,7 @@ source_suffix = {
 }
 latex_engine = 'xelatex'
 latex_documents = [
-('hardware',
-'abc.tex',
-'FET3576-C Hardware Manual',
-'Forlinx Embedded Technology Co., Ltd',
-'manual',
-False),
+
 
 ('test',
 'test.tex',

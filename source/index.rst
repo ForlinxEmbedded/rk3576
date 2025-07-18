@@ -12,7 +12,7 @@ documentation for details.
 
 
 .. toctree::
-   hardware
+   test
    :maxdepth: 3
    :caption: Contents
 
