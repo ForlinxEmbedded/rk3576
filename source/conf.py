@@ -30,7 +30,7 @@ latex_elements = {
       \usepackage{fontspec}
       \setmonofont{DejaVu Sans Mono}[Scale=0.8]
       \setcounter{secnumdepth}{0}
-      \setcounter{tocdepth}{0}  % Adjust the depth of the ToC if needed
+      \setcounter{tocdepth}{1}  % Adjust the depth of the ToC if needed
       
     ''',
 }

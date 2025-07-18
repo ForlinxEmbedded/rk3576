@@ -16,6 +16,7 @@ documentation for details.
 
 .. toctree::
    test
+   development-board
    :maxdepth: 3
    :caption: Contents
 
