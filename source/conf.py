@@ -35,8 +35,8 @@ False)
 
 latex_elements = {
     'preamble': r'''
-   
-    
+    \usepackage{fontspec}
+    \setmainfont{Times New Roman}
     \setcounter{secnumdepth}{0} % 禁用章节自动编号
 	
    
