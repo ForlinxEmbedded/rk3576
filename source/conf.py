@@ -29,6 +29,8 @@ latex_elements = {
     'preamble': r'''
       \usepackage{fontspec}
       \setmonofont{DejaVu Sans Mono}[Scale=0.8]
+      \setcounter{secnumdepth}{0}
+      \setcounter{tocdepth}{0}  % Adjust the depth of the ToC if needed
       
     ''',
 }
