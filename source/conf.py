@@ -36,12 +36,11 @@ False)
 latex_elements = {
     'preamble': r'''
     \usepackage{fontspec}
-    \usepackage{xeCJK}
-    \setCJKmainfont{Noto Serif CJK SC}  % 设置中文字体为宋体（可以替换为你喜欢的中文字体）
+    
     \setcounter{secnumdepth}{0} % 禁用章节自动编号
 	
    
-    \setmainfont{Times New Roman}  % 设置英文字体为 Times New Roman（可以根据需求调整）
+   
     '''
 }
 # Enable numbered headings
