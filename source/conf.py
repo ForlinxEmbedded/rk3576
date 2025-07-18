@@ -24,10 +24,10 @@ source_suffix = {
 latex_engine = 'xelatex'
 
 latex_elements = {
+    'fontpkg':
+    '\\usepackage{lmodern}',
     'preamble': r'''
       \usepackage{fontspec}
-      \setmainfont{DejaVu Serif}  % 使用系统中已安装的字体
-      \setsansfont{DejaVu Sans}
       \setmonofont{DejaVu Sans Mono}[Scale=0.8]
       
     ''',
