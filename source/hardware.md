@@ -1,4 +1,4 @@
-下载PDF：[下载](./_static/abc.pdf)
+下载PDF：[下载](https:docs.forlinx.net/_static/abc.pdf)
 
 # 1. FETMX6UL-C简介
 

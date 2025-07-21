@@ -23,9 +23,12 @@ jobs:
       run: |
         tox -e html
         echo "Build completed."
-
     
-        
+    - name: Build PDF
+      run: |
+        tox -e pdf
+        echo "PDF built."
+
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       if: github.ref == 'refs/heads/main'
