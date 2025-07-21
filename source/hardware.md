@@ -1,4 +1,4 @@
-下载PDF：[下载](/_static/abc.pdf)
+下载PDF： <a href="./_static/abc.pdf" download>PDF</a>
 
 # 1. FETMX6UL-C简介
 
