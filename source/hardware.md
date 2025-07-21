@@ -1,3 +1,5 @@
+下载PDF：[下载](./_static/abc.pdf)
+
 # 1. FETMX6UL-C简介
 
 风纪扣大家发来开发及

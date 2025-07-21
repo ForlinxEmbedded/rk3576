@@ -38,8 +38,8 @@ latex_elements = {
 latex_documents = [
 
 
-('test',
-'test.tex',
+('hardware',
+'abc.tex',
 'FET3576-C Hardware Manual',
 'Forlinx Embedded Technology Co., Ltd',
 'manual',
