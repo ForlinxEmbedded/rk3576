@@ -1,4 +1,4 @@
-[📄 下载 PDF]({{ pdf_base_url }}/{{ env.docname }}.pdf)
+[📄 下载 PDF]({{ pdf_base_url }}/{{ docname }}.pdf)
 
 # 1. FETMX6UL-C简介
 
