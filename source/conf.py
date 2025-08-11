@@ -5,6 +5,7 @@
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
+import os 
 
 project = 'FET3506-C/OK3506-C'
 copyright = '2025, Forlinx Embedded Technology Co., Ltd'
@@ -56,4 +57,8 @@ latex_show_urls = 'footnote'
 
 html_theme = 'sphinx_rtd_theme'
 html_copy_source = False
+
+html_context = {
+    "pdf_base_url": "_static/pdf",
+}
 

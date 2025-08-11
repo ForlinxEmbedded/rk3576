@@ -1,4 +1,4 @@
-下载PDF： <a href="./_static/abc.pdf" download>PDF</a>
+[📄 下载 PDF]({{ pdf_base_url }}/{{ env.docname }}.pdf)
 
 # 1. FETMX6UL-C简介
 
