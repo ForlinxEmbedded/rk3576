@@ -58,22 +58,4 @@ latex_show_urls = 'footnote'
 html_theme = 'sphinx_rtd_theme'
 html_copy_source = False
 
-html_context = {
-    "pdf_base_url": "_static/pdf",
-}
-
-def render_jinja(app, docname, source):
-    """
-    在读取源文件时，用 Jinja 渲染 Markdown/RST 文本。
-    """
-    # 每次渲染时添加 docname 到模板变量
-    context = dict(app.config.html_context)
-    context["docname"] = docname  # 当前文档名，不带扩展名
-
-    src = source[0]
-    rendered = app.builder.templates.render_string(src, context)
-    source[0] = rendered
-
-def setup(app):
-    app.connect("source-read", render_jinja)
 
