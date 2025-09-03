@@ -7,7 +7,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 import os 
 
-project = 'FET3506-C/OK3506-C'
+project = 'FET3506-C/OK3506-Ceee'
 copyright = '2025, Forlinx Embedded Technology Co., Ltd'
 author = 'Forlinx Embedded Technology Co., Ltd'
 release = '1.0'
